@@ -115,6 +115,7 @@ if __name__ == '__main__':
     # formulate the data
     dftrain = formulate_data(arrtrain)
     dftest  = formulate_data(arrtest)
+    print dftrain['race'].dtype
 
     # save to csv files
     csvtrain = os.path.join(dirname, 'train.csv')
